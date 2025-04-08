@@ -1,15 +1,15 @@
-# 📚 Student Performance Tracker
+# Student Performance Tracker
 
 A full-stack web application to help students manage their academic progress, track deadlines, and organize daily study goals effectively.
 
-## ✨ Features
+## Features
 
-- 📖 Add and manage subjects with quizzes, assignments, and syllabus tracking
-- ⏰ Deadline tracker with modal interface and edit support
-- ✅ Daily Goals checklist with a floating icon to track short-term targets
-- 📊 Visual dashboard for progress monitoring (optional)
-- 🔗 Fully synchronized with MongoDB using Redux Toolkit and Axios
-- 🐳 Dockerized backend with planned Kubernetes deployment using Minikube
+-  Add and manage subjects with quizzes, assignments, and syllabus tracking
+-  Deadline tracker with modal interface and edit support
+-  Daily Goals checklist with a floating icon to track short-term targets
+-  Visual dashboard for progress monitoring (optional)
+-  Fully synchronized with MongoDB using Redux Toolkit and Axios
+-  Dockerized backend with planned Kubernetes deployment using Minikube
 
 ---
 
@@ -18,7 +18,6 @@ A full-stack web application to help students manage their academic progress, tr
 ### Frontend
 - React.js
 - Tailwind CSS
-- Redux Toolkit
 - Axios
 
 ### Backend
@@ -31,4 +30,25 @@ A full-stack web application to help students manage their academic progress, tr
 - Kubernetes (Minikube)
 
 ---
+
+## Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/student-performance-tracker.git
+cd student-performance-tracker
+
+### 2. Backend Support
+cd backend
+npm install
+node server.js
+
+### 3. Frontend Support
+cd frontend
+npm install
+npm start
+
+## Docker Support (Backend Only for Now)
+
+
 
