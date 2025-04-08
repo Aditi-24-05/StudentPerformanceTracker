@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deploy-2022bcd0050
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: student-tracker-backend
+  template:
+    metadata:
+      labels:
+        app: student-tracker-backend
+    spec:
+      containers:
+        - name: backend
+          image: 2022bcd0050-aditi
+          imagePullPolicy: Never 
+          ports:
+            - containerPort: 5000
+          env:
+            - name: MONGO_URI
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config-2022bcd0050
+                  key: MONGO_URI
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: db-secret-2022bcd0050
+                  key: DB_USER
+            - name: DB_PASS
+              valueFrom:
+                secretKeyRef:
+                  name: db-secret-2022bcd0050
+                  key: DB_PASS
